@@ -1,36 +1,34 @@
+import Navbar from "../../Component/Navbar";
 import "./AddRecipe.css";
 
 const AddRecipe = () => {
-  return (<div>
-      <form className="recipe-form">
-    <div className="form-group">
-      <label for="inputRecipeImage">Recipe Image URL:</label>
-      <input type="text" id="inputRecipeImage" name="inputRecipeImage" />
-    </div>
+  return (
+    <div>
+      <Navbar />
+      <div id="recipe-form">
+        <h2>Recipe Information</h2>
+        <form>
+          <label htmlFor="recipeImage">Recipe Image URL:</label>
+          <input type="text" id="recipeImage" name="recipeImage" />
 
-    <div className="form-group">
-      <label for="inputRecipeName">Recipe Name:</label>
-      <input type="text" id="inputRecipeName" name="inputRecipeName" />
-    </div>
+          <label htmlFor="recipeName">Recipe Name:</label>
+          <input type="text" id="recipeName" name="recipeName" />
 
-    <div className="form-group">
-      <label for="inputRecipeDescription">Recipe Description:</label>
-      <textarea id="inputRecipeDescription" name="inputRecipeDescription" rows="4" ></textarea>
-    </div>
+          <label htmlFor="recipeDescription">Recipe Description:</label>
+          <textarea
+            id="recipeDescription"
+            name="recipeDescription"
+            rows="4"
+          ></textarea>
 
-    <div className="form-group">
-      <label for="inputRecipeType">Recipe Type:</label>
-      <select id="inputRecipeType" name="inputRecipeType" required>
-        <option value="appetizer">Appetizer</option>
-        <option value="main_course">Main Course</option>
-        <option value="dessert">Dessert</option>
-        <!-- Add more options as needed -->
-      </select>
-    </div>
+          <label htmlFor="recipeType">Recipe Type:</label>
+          <input type="text" id="recipeType" name="recipeType" />
 
-    <button type="submit" className="submit-button">Submit</button>
-  </form>
-  </div>);
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default AddRecipe;

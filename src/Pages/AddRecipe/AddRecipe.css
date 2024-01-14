@@ -1,25 +1,20 @@
-.recipe-form {
-  max-width: 400px;
+#recipe-form {
+  width: 600px;
   margin: 20px auto;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.form-group {
+  background-color: #f3f1f1;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* overflow: hidden; */
 }
 
-.form-group label {
+#recipe-form label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
+#recipe-form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
@@ -29,13 +24,7 @@
   font-size: 16px;
 }
 
-.form-group select {
-  appearance: none;
-  background: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="%232d3748"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>')
-    no-repeat right 10px center/15px 15px;
-}
-
-.submit-button {
+#recipe-form button {
   display: block;
   padding: 12px;
   background-color: #3498db;
@@ -48,6 +37,6 @@
   transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
+#recipe-form button:hover {
   background-color: #2980b9;
 }
