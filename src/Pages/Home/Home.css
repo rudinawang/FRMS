@@ -10,17 +10,17 @@
 }
 
 /* body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-} */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  } */
 
 /* .recipe-card {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-} */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  } */
 
 .recipe-image {
   width: 400px;
