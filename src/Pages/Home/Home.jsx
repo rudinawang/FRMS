@@ -19,15 +19,15 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      {recipes.map((recipe) => {
-        return (
-          <div key={recipe.id} className="recipe-card">
-            <img
-              className="recipe-image"
-              src={recipe.recipeImage}
-              alt="Recipe Image"
-            />
-            <div className="recipe-details">
+      <div className="recipe-container">
+        {recipes.map((recipe) => {
+          return (
+            <div key={recipe.id} className="recipe-card">
+              <img
+                className="recipe-image"
+                src={recipe.recipeImage}
+                alt="Recipe Image"
+              />
               <h2 className="recipe-name">{recipe.recipeName}</h2>
               <p className="recipe-description">{recipe.recipeDescription}</p>
               <h3 className="recipe-type">{recipe.recipeType}</h3>
@@ -35,9 +35,9 @@ const Home = () => {
                 Recipe Details
               </a>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };
